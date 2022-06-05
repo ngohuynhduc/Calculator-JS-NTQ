@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: -3;
+}
+
+.container:before {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #335a84, #335a84 50%, #698eb6 50%, #698eb6);
+}
+
+.container::after {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(160deg, #eb8468, #eb8468 50%, transparent 50%, transparent);
+    animation: animate 5s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.mt{
+    margin-top: 0 !important;
+}
+.container {
+    margin: 0 auto;
+}
+
+.calculator {
+    background-color: azure;
+    min-height: 80%;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.header__history {
+    background-color: #4b6d91;
+    border-radius: 20px 20px 0 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__history__text {
+    margin: 0;
+    padding: 0 50px;
+    align-self: center;
+    font-size: 24px;
+    color: #d0dbe7;
+}
+
+.header__monitor {
+    width: 100%;
+    height: 150px;
+    background-color: #698eb6;
+}
+
+.button {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-group__btn {
+    height: 65px;
+    width: 65px;
+    margin-top: 20px;
+    box-shadow: -1px -1px 14px -1px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: -1px -1px 14px -1px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: -1px -1px 14px -1px rgba(0, 0, 0, 0.46);
+    border-radius: 50%; 
+    position: relative;
+}
+
+.button-group {
+    align-self: center;
+}
+.button-group__btn__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #335a84;
+    font-size:32px;
+}
+.header__monitor > p{
+    color: #d0dbe7;
+    padding: 0 50px;
+    margin: 0;
+    align-self: center;
+    font-size:80px;
+    font-weight: lighter;
+}
+.header__monitor{
+    display: flex;
+    justify-content: flex-end;
+}
+.button-group__btn--primary{
+    background-color: #4b6d91;
+}
+.button-group__btn--secondary{
+    background-color: #eb8468;
+}
+.button-group__btn--primary >p, .button-group__btn--secondary>p{
+    color: #cfd6e0
+}
