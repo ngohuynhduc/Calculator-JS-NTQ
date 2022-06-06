@@ -64,7 +64,7 @@
 
 .header__history__text {
     margin: 0;
-    padding: 0 50px;
+    padding: 0 30px;
     align-self: center;
     font-size: 24px;
     color: #d0dbe7;
@@ -92,6 +92,14 @@
     -moz-box-shadow: -1px -1px 14px -1px rgba(0, 0, 0, 0.46);
     border-radius: 50%; 
     position: relative;
+    cursor: pointer;
+}
+.button-group__btn:hover{
+    background-color: #335a84;
+    
+}
+.button-group__btn:hover .button-group__btn__text{
+    color: #d0dbe7;
 }
 
 .button-group {
@@ -105,13 +113,20 @@
     margin: 0;
     color: #335a84;
     font-size:32px;
+    font-weight: 500;
+    background-color: transparent;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
 }
 .header__monitor > p{
     color: #d0dbe7;
-    padding: 0 50px;
+    padding: 0 30px;
     margin: 0;
     align-self: center;
-    font-size:80px;
+    font-size:64px;
     font-weight: lighter;
 }
 .header__monitor{
@@ -124,6 +139,6 @@
 .button-group__btn--secondary{
     background-color: #eb8468;
 }
-.button-group__btn--primary >p, .button-group__btn--secondary>p{
+.button-group__btn--primary >button, .button-group__btn--secondary>button{
     color: #cfd6e0
 }
