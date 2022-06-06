@@ -17,7 +17,7 @@
                     <p class="header__history__text">1+1=2</p>
                 </div>
                 <div class="header__monitor">
-                    <p>1999</p>
+                    <p id="result"></p>
                 </div>
             </div>
             <div class="button">
@@ -35,11 +35,11 @@
                         <button class="button-group__btn__text" value="7">7</button>
                     </div>
                     <div class="button-group__btn">
-                        <button class="button-group__btn__text" value=""><i class="bi bi-plus-slash-minus"></i></button></div>
+                        <button class="button-group__btn__text" onclick="reverseNumber()"><i class="bi bi-plus-slash-minus"></i></button></div>
                 </div>
                 <div class="button-group">
                     <div class="button-group__btn mt">
-                        <button class="button-group__btn__text" value="">C</button>
+                        <button class="button-group__btn__text" onclick="clean()">C</button>
                     </div>
                     <div class="button-group__btn">
                         <button class="button-group__btn__text" value="8">8</button>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="button-group">
                     <div class="button-group__btn mt">
-                        <button class="button-group__btn__text" value=""><i class="bi bi-arrow-left-short"></i></button>
+                        <button class="button-group__btn__text" onclick="undo()"><i class="bi bi-arrow-left-short"></i></button>
                     </div>
                     <div class="button-group__btn">
                         <button class="button-group__btn__text" value="9">9</button>
@@ -83,10 +83,11 @@
                         <button class="button-group__btn__text" value="+">+</button>
                     </div>
                     <div class="button-group__btn button-group__btn--secondary">
-                        <button class="button-group__btn__text" value="">=</button></div>
+                        <button class="button-group__btn__text" onclick="equal()">=</button></div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
